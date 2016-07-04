@@ -3,12 +3,12 @@
     <!-- 見出し -->
     <div class="jumbotron">
       <h1>Welcome!</h1>
-      <h2>200 websites in 200 days.</h2>
+      <h2 style="font-family:futura; font-weight:900">200 websites in 200 days.</h2>
         <p>I'm Shun Kubota from Japan and I am making websites.<br />
          You can follow the project here.
         </p>
       <hr>
-        <p>Today's Website : </p>
+        <p><strong>Today's Website : <span><%= link_to "Homepage", root_path %></span></strong></p>
       <hr>
 
         <!-- notice space -->
@@ -21,14 +21,11 @@
     </div>
 
     <div class="row">
-        <hr>
-        <div class="row">
-          <!-- フッターは等分なしのワンカラム col-sm-12 -->
-          <div class="col-sm-12">
-            <footer>
-              <p>© 2016 ShunKubota All rights reserved.</p>
-            </footer>
-          </div>
+        <!-- フッターは等分なしのワンカラム col-sm-12 -->
+        <div class="col-sm-12">
+          <footer>
+            <p>© 2016 ShunKubota All rights reserved.</p>
+          </footer>
         </div>
       </div>
     </div>
