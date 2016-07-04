@@ -1,0 +1,24 @@
+  <!-- 雰囲気を出すためにナビバーも表示 -->
+  <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="sr-only">navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <%= link_to "Shun Kubota", root_path, class: "navbar-brand" %>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><%= link_to "Home", root_path %></li>
+          <li><%= link_to "About", static_pages_about_path %></li>
+          <li><a href="" target="_blank">Blog</a></li>
+          <li><a href="" target="_blank">Contact</a></li>
+          <li><%= link_to "Github", "https://github.com/KuboShun/shun_kubota" , target: "_blank" %></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ナビバー終了 -->

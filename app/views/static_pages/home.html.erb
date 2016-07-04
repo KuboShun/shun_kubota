@@ -1,58 +1,26 @@
 <% provide(:title,"Shun Kubota") %>
-  <!-- 雰囲気を出すためにナビバーも表示 -->
-  <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-          <span class="sr-only">navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Shun Kubota</a>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="" target="_blank">Home</a></li>
-          <li><a href="" target="_blank">About</a></li>
-          <li><a href="" target="_blank">Blog</a></li>
-          <li><a href="" target="_blank">Contact</a></li>
-          <li><a href="" target="_blank">Github</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav><!-- ナビバー終了 -->
   <div class="container">
     <!-- 見出し -->
     <div class="jumbotron">
-      <h1>200 websites in 200 days.</h1>
-      <p>I'm Shun Kubota from Japan and I I am making websites.<br />
-         You can follow the project here.</p>
-      <p><a href="" target="_blank" class="btn btn-success btn-lg">START</a></p>
+      <h1>Welcome!</h1>
+      <h2>200 websites in 200 days.</h2>
+        <p>I'm Shun Kubota from Japan and I am making websites.<br />
+         You can follow the project here.
+        </p>
+      <hr>
+        <p>Today's Website : </p>
+      <hr>
+
+        <!-- notice space -->
+
     </div><!-- 見出し終了 -->
     <div class="row">
-
+      <div class="col-sm-6 col-md-4 col-lg-4 website_list_container">
+        <div>Day 1 <span><%= link_to "Homepage", root_path %></span></div>
+      </div>
     </div>
-    <!-- グリッドシステム -->
+
     <div class="row">
-      <!-- 大画面PCでは6等分（col-lg-2）、PC では3等分（col-md-4）、タブレットでは2等分（col-sm-6）、それ以下では等分なしのワンカラム・レイアウト -->
-      <div class="col-sm-6 col-md-4 col-lg-4">
-        <h2>HTML</h2>
-        <p>HTML is a markup language that is used for creating web pages.</p>
-        <p><a href="" target="_blank" class="btn btn-success">詳細 &raquo;</a></p>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-4">
-        <h2>CSS</h2>
-        <p>CSS is used for describing the presentation of web pages. </p>
-        <p><a href="" target="_blank" class="btn btn-success">詳細 &raquo;</a></p>
-      </div>
-      <div class="clearfix visible-sm-block"></div>
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <h2>Bootstrap</h2>
-        <p>Bootstrap is a powerful front-end framework for faster and easier web development. </p>
-        <p><a href="" target="_blank" class="btn btn-success">詳細 &raquo;</a></p>
-      </div>
-      <div class="clearfix visible-md-block"></div>
         <hr>
         <div class="row">
           <!-- フッターは等分なしのワンカラム col-sm-12 -->

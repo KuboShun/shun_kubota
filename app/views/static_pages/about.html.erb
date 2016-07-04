@@ -1,2 +1,44 @@
-<h1>StaticPages#about</h1>
-<p>Find me in app/views/static_pages/about.html.erb</p>
+<% provide(:title,"Shun Kubota") %>
+  <div class="container">
+    <!-- 見出し -->
+    <div class="jumbotron">
+      <h1>200 websites in 200 days.</h1>
+      <p>I'm Shun Kubota from Japan and I am making websites.<br />
+         You can follow the project here.</p>
+      <p><a href="" target="_blank" class="btn btn-success btn-lg">START</a></p>
+    </div><!-- 見出し終了 -->
+    <div class="row">
+      
+    </div>
+
+    <div class="row">
+      <!-- 大画面PCでは6等分（col-lg-2）、PC では3等分（col-md-4）、タブレットでは2等分（col-sm-6）、それ以下では等分なしのワンカラム・レイアウト -->
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <h2>HTML</h2>
+        <p>HTML is a markup language that is used for creating web pages.</p>
+        <p><a href="" target="_blank" class="btn btn-success">詳細 &raquo;</a></p>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <h2>CSS</h2>
+        <p>CSS is used for describing the presentation of web pages. </p>
+        <p><a href="" target="_blank" class="btn btn-success">詳細 &raquo;</a></p>
+      </div>
+      <div class="clearfix visible-sm-block"></div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <h2>Bootstrap</h2>
+        <p>Bootstrap is a powerful front-end framework for faster and easier web development. </p>
+        <p><a href="" target="_blank" class="btn btn-success">詳細 &raquo;</a></p>
+      </div>
+      <div class="clearfix visible-md-block"></div>
+        <hr>
+        <div class="row">
+          <!-- フッターは等分なしのワンカラム col-sm-12 -->
+          <div class="col-sm-12">
+            <footer>
+              <p>© 2016 ShunKubota All rights reserved.</p>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
