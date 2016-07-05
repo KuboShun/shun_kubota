@@ -3,10 +3,16 @@
   overflow: hidden;
 }
 
+.discription_message {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
 
 .color_pallete {
   width: 100px;
-  height: 500px;
+  height: 300px;
   float: left;
 
   .color {
@@ -17,38 +23,38 @@
 }
 
 .wall {
-  height: 500px;
+  height: 300px;
   width: calc(90% - 100px);
   position: relative;
   float: left;
   background: #2E2E2E;
   margin-left: 20px;
-  padding: 0 5px;
+  padding: 2%;
 
   .row_1,
   .row_3,
   .row_4 {
-    height: 100px;
-    margin: 10px 0;
+    height: 20%;
+    margin: 0 0 2% 0;
   }
   .row_2 {
-    height: 150px;
-    margin: 10px 0;
+    height: 30%;
+    margin: 0 0 2% 0;
   }
 
   .col_1,
   .col_3,
   .col_4 {
-    width: 100px;
+    width: 20%;
     height: 100%;
-    margin: 0 5px;
+    margin: 0 1%;
     background: #fff;
     float: left;
   }
   .col_2 {
-    width: calc(100% - 340px);
+    width: 32%;
     height: 100%;
-    margin: 0 5px;
+    margin: 0 1%;
     background: #fff;
     float: left;
   }  
