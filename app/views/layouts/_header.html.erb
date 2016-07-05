@@ -14,11 +14,30 @@
         <ul class="nav navbar-nav">
           <li class="active"><%= link_to "Home", root_path %></li>
           <li><%= link_to "About", static_pages_about_path %></li>
-          <li><a href="" target="_blank">Blog</a></li>
-          <li><a href="" target="_blank">Contact</a></li>
+          <li><a href="" id="sampleButton">Blog</a></li>
+          <li><%= mail_to "shun.ku60ta@gmail.com", "Contact", :cc => "", :subject => "From 200 websites in 200 days" %></li>
           <li><%= link_to "Github", "https://github.com/KuboShun/shun_kubota" , target: "_blank" %></li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- ナビバー終了 -->
+
+<!-- モーダル・ダイアログ -->
+<div class="modal fade" id="sampleModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+        <h4 class="modal-title">タイトル</h4>
+      </div>
+      <div class="modal-body">
+        本文
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+        <button type="button" class="btn btn-primary">ボタン</button>
+      </div>
+    </div>
+  </div>
+</div>

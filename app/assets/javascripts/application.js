@@ -14,3 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+  $('#sampleButton').click( function () {
+    $('#sampleModal').modal();
+  });

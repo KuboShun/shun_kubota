@@ -1,4 +1,4 @@
-<% provide(:title,"Shun Kubota") %>
+<% provide(:title,"200 websites in 200 days") %>
   <div class="container">
     <!-- 見出し -->
     <div class="jumbotron">
@@ -16,17 +16,8 @@
     </div><!-- 見出し終了 -->
     <div class="row">
       <div class="col-sm-6 col-md-4 col-lg-4 website_list_container">
+        <div>Day 2 <span><%= link_to "draw_the_wall", controller: "static_pages", action: "number", file_id: "draw_the_wall" %></span></div>
         <div>Day 1 <span><%= link_to "Homepage", root_path %></span></div>
-      </div>
-    </div>
-
-    <div class="row">
-        <!-- フッターは等分なしのワンカラム col-sm-12 -->
-        <div class="col-sm-12">
-          <footer>
-            <p>© 2016 ShunKubota All rights reserved.</p>
-          </footer>
-        </div>
       </div>
     </div>
   </div>
