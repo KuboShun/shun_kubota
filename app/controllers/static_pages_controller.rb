@@ -3,7 +3,6 @@ class StaticPagesController < ApplicationController
   end
 
   def about
-    render file: 'public/draw_the_wall.html', layout: true, content_type: 'text/html'
   end
 
   def contact

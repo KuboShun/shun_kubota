@@ -1,0 +1,18 @@
+<% provide(:title,"change_the_color") %>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="discription_message">
+        Why don't you change the color?
+      </div>
+      <div class="workspace">
+        <div class="color_change_box"></div>
+        <div class="color_range">
+          <label>Red: <span id="red_range_text"></span><input type="range" name="red_range" max="255" step="1" class="color_bar" /></label><br />
+          <label>Green: <span id="green_range_text"></span><input type="range" name="green_range" max="255" step=1 class="color_bar"></label><br />
+          <label>Blue: <span id="blue_range_text"></span><input type="range" name="blue_range" max="255" step=1 class="color_bar"></label><br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/change_the_color.js" type="text/javascript" charset="utf-8" async defer></script>

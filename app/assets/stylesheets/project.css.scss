@@ -10,6 +10,27 @@
 }
 
 
+/**  change the color  **/
+.color_change_box {
+  width: 30vmin;
+  height: 30vmin;
+  background: red;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.color_range {
+  margin: 20px auto;
+  width: 30vmin;
+  clear: both;
+
+  label {
+    margin: auto;
+  }
+}
+
+
+/**  change the wall  **/
 .color_pallete {
   width: 100px;
   height: 300px;
@@ -29,47 +50,29 @@
   float: left;
   background: #2E2E2E;
   margin-left: 20px;
-  padding: 2%;
 
   .row_1,
+  .row_2,
   .row_3,
   .row_4 {
-    height: 20%;
-    margin: 0 0 2% 0;
-  }
-  .row_2 {
-    height: 30%;
-    margin: 0 0 2% 0;
+    height: 24%;
+    padding: 0.5%;
   }
 
   .col_1,
+  .col_2,
   .col_3,
   .col_4 {
-    width: 20%;
+    width: 24%;
     height: 100%;
-    margin: 0 1%;
+    margin: 0.5%;
     background: #fff;
     float: left;
   }
-  .col_2 {
-    width: 32%;
-    height: 100%;
-    margin: 0 1%;
-    background: #fff;
-    float: left;
-  }  
 }
-
 
 
 /* color */
-
-.red {
-    background-color: red;
-}
-.green {
-    background-color: green;
-}
-.blue {
-    background-color: blue;
-}
+.red { background-color: red;}
+.green { background-color: green;}
+.blue { background-color: blue;}
