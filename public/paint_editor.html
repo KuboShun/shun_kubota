@@ -1,0 +1,24 @@
+<% provide(:title,"paint_editor") %>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="discription_message">
+        Why don't you draw a picture?
+      </div>
+      <div class="workspace">
+        <canvas class="canvas" id="canvas" width="400" height="400">
+          HTML5　Canvasに対応したブラウザーを使用してください。
+        </canvas>
+        <div class="paint_editor_color_box">
+          <div class="color_change_box_2"></div>
+          <div class="color_range">
+            <label>Red: <span id="red_range_text">0</span><input type="range" name="red_range" max="255" step="1" class="color_bar" value="0"></label><br />
+            <label>Green: <span id="green_range_text">0</span><input type="range" name="green_range" max="255" step=1 class="color_bar" value="0"></label><br />
+            <label>Blue: <span id="blue_range_text">0</span><input type="range" name="blue_range" max="255" step=1 class="color_bar" value="0"></label><br />
+            <label>Width: <span id="width_range_text">1</span><input type="range" name="width_range" max="10" step=0.5 class="color_bar" value="1"></label><br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="/js/paint_editor.js" type="text/javascript" charset="utf-8" async defer></script>
