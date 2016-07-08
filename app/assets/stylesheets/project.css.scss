@@ -9,7 +9,23 @@
   margin-top: 30px;
 }
 
+/** have_the_time **/
+.clock {
+  width: 350px;
+  text-align: center;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 5px;
+  border: 6px solid;
+  border-color: rgb(170,157.25,250.75);
+}
+#date,
+#time {
+  font-family: 'Monoton', cursive;
+  font-size: 40px;
+}
 
+/** paint_editor **/
 .canvas {
   background: #ffffff;
   float: left;
