@@ -13,6 +13,7 @@
 .stopwatch {
   width: 100%;
   height: auto;
+  min-height: 350px;
   text-align: center;
   margin: auto;
   background: #323232;
@@ -37,6 +38,7 @@
   display: inline-block;
   width: auto;
   height: auto;
+  min-height: 250px;
   margin: 0 10px;
 }
 .digit {
