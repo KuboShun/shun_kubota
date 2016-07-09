@@ -9,7 +9,7 @@
         </p>
       <hr>
         <p><strong>Today's Website : 
-        <span><%= link_to "Blog", controller: "posts" %></span>
+        <span><%= link_to "stopwatch", controller: "static_pages", action: "number", file_id: "stopwatch" %></span>
         </strong></p>
       <hr>
 
@@ -19,6 +19,7 @@
     <div class="row">
       <div class="col-sm-6 col-md-4 col-lg-4 website_list_container">
       http://localhost:3000/posts
+        <div>Day 7 <span><%= link_to "stopwatch", controller: "static_pages", action: "number", file_id: "stopwatch" %></span></div>
         <div>Day 6 <span><%= link_to "Blog", controller: "posts" %></span></div>
         <div>Day 5 <span><%= link_to "have_the_time", controller: "static_pages", action: "number", file_id: "have_the_time" %></span></div>
         <div>Day 4 <span><%= link_to "paint_editor", controller: "static_pages", action: "number", file_id: "paint_editor" %></span></div>
