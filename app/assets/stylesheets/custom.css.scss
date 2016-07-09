@@ -43,3 +43,17 @@ footer ul li {
   float: left;
   margin-left: 15px;
 }
+
+
+
+#contents {
+  z-index: 0;
+  font-size: 16px;
+}
+#modal-open {
+  color: #cc0000;
+}
+/* モーダル コンテンツエリア */
+#modal-main {
+　display: none;
+}

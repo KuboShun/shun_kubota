@@ -1,0 +1,15 @@
+<% provide(:title,"Blog") %>
+<div class="container">
+  <div class="jumbotron">
+    <div class="description_message">
+      Blog
+    </div>
+    <div class="workspace">
+    <h2><%= link_to "All Posts", posts_path %></h2>
+      <%= @post.inspect %><br />
+      <%= @post.title %><br />
+      <%= @post.description %>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,28 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/** posts_controller **/
+table.post_table {
+    width: 100%;
+    margin:20px 0 50px;
+    border-top: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+    border-spacing:0;
+}
+table.post_table tr th,
+table.post_table tr td {
+    font-size: 12px;
+    border-bottom: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    padding: 7px;
+}
+table.post_table tr th {
+    background: #E6EAFF;
+}
+
+
+#modal-main {
+  display: none;
+}

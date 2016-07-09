@@ -1,0 +1,62 @@
+<% provide(:title,"Blog") %>
+<div class="container">
+  <div class="jumbotron">
+    <div class="description_message">
+      All Posts
+    </div>
+    <div class="workspace">
+
+
+
+      <button type="button" class="btn btn-default" id="modal-open">New Post</button>
+      <div id="modal-main">
+        <%= bootstrap_form_for :post, url: posts_path do |f| %>
+          <%= f.text_field :title %>
+          <%= f.text_area :description, cols: 60, rows: 8 %>
+          <%= f.submit %>
+        <% end %>
+      </div>
+ 
+
+
+      <table class="post_table">
+        <tr>
+          <th>TITLE</th>
+          <th>Description</th>
+          <th></th>
+        </tr>
+
+        <% @posts.each do |post| %>
+          <tr>
+            <td><%= truncate(post.title, :length => 40) %></td>
+            <td><%= truncate(post.description, :length => 60) %></td>
+            <td><%= link_to "Edit", edit_post_path(post), class: 'btn btn-primary btn-xs'%>  
+                <%= link_to "Show", post, class: 'btn btn-primary btn-xs' %>  
+                <%= link_to '削除', post_path(post), method: :delete, data: { confirm: '削除しますか？' }, class: "btn btn-danger btn-xs" %></td>
+          </tr>
+        <% end %>
+      </table>
+
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  var modal_switch = false;
+  $("#modal-main").css("display", "none");
+
+  $("#modal-open").click(function(){
+    console.log("a");
+    if (!modal_switch) {
+      $("#modal-main").fadeIn("slow");
+      modal_switch = true;
+      console.log("b");
+    } else {
+      $("#modal-main").fadeOut("slow");
+      modal_switch = false;
+      console.log("c");
+    }
+  });
+
+</script>

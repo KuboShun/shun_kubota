@@ -1,0 +1,25 @@
+<%= bootstrap_form_for :post, url: posts_path do |f| %>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="description_message">
+        Blog
+      </div>
+      <div class="workspace">
+        <% if @post.errors.any? %>
+          <div id="error_explanation">
+            <h2>You got <%= pluralize(@post.errors.count, "error") %></h2>
+            <ul>
+              <% @post.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+        <h2><%= link_to "All Posts", posts_path %></h2>
+          <%= f.text_field :title %>
+          <%= f.text_area :description, cols: 60, rows: 8 %>
+          <%= f.submit %>
+      </div>
+    </div>
+  </div>
+<% end %>

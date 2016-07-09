@@ -1,0 +1,65 @@
+<% provide(:title,"Stopwatch") %>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="description_message">
+        Why don't you stop the time?
+      </div>
+      <div class="workspace">
+        <div class="stopwatch">
+          <div class="time_unit">
+
+
+            <div class="digit tens_sec">
+              <div class="bar top_bar"></div>
+              <div class="bar middle_bar"></div>
+              <div class="bar bottom_bar"></div>
+              <div class="bar left_upper_bar"></div>
+              <div class="bar left_lower_bar"></div>
+              <div class="bar right_upper_bar"></div>
+              <div class="bar right_lower_bar"></div>
+            </div>
+
+            <div class="digit ones_sec">
+              <div class="bar top_bar"></div>
+              <div class="bar middle_bar"></div>
+              <div class="bar bottom_bar"></div>
+              <div class="bar left_upper_bar"></div>
+              <div class="bar left_lower_bar"></div>
+              <div class="bar right_upper_bar"></div>
+              <div class="bar right_lower_bar"></div>
+            </div>
+          </div>
+
+          <div class="colon">.</div>
+    
+          <div class="time_unit">
+            <div class="digit tens_milsec">
+              <div class="bar top_bar"></div>
+              <div class="bar middle_bar"></div>
+              <div class="bar bottom_bar"></div>
+              <div class="bar left_upper_bar"></div>
+              <div class="bar left_lower_bar"></div>
+              <div class="bar right_upper_bar"></div>
+              <div class="bar right_lower_bar"></div>
+            </div>
+            <div class="digit ones_milsec">
+              <div class="bar top_bar"></div>
+              <div class="bar middle_bar"></div>
+              <div class="bar bottom_bar"></div>
+              <div class="bar left_upper_bar"></div>
+              <div class="bar left_lower_bar"></div>
+              <div class="bar right_upper_bar"></div>
+              <div class="bar right_lower_bar"></div>
+            </div>
+          </div>
+          <div class="stopwatch_button">
+            <button id="start" class="btn btn-primary">Start</button>
+            <button id="stop" class="btn btn-primary">Stop</button>
+            <button id="reset" class="btn btn-primary">Reset</button>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/stopwatch.js" type="text/javascript" charset="utf-8" async defer></script>

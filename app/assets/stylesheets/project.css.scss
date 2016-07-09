@@ -3,11 +3,99 @@
   overflow: hidden;
 }
 
-.discription_message {
+.description_message {
   font-size: 30px;
   text-align: center;
   margin-top: 30px;
 }
+
+/** stopwatch **/
+.stopwatch {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: auto;
+  background: #323232;
+  border-radius: 5px;
+  border: 6px solid;
+  border-color: #FFF00C;  
+}
+.stopwatch_button {
+  margin: 10px;
+}
+.colon {
+  position: relative;
+  width: auto;
+  top: -50px;
+  display: inline-block;
+  font-size: 120px;
+  color: #FFF00C;
+}
+.time_unit {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px;
+}
+.digit {
+  position: relative;
+  display: inline-block;
+  margin: 40px 5px;
+  height: 174px;
+  width: 90px;
+}
+
+.bar {
+  position: relative;
+  width: 80px;
+  height: 14px;
+  background:
+    linear-gradient(45deg,  transparent 7px, #FFF00C 7px),
+    linear-gradient(135deg, transparent 7px, #FFF00C 7px),
+    linear-gradient(225deg, transparent 7px, #FFF00C 7px),
+    linear-gradient(315deg, transparent 7px, #FFF00C 7px);
+  background-position: bottom left, top left, top right, bottom right;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+
+.top_bar {
+  position: absolute;
+  top: 0;
+}
+.middle_bar {
+  position: absolute;
+  top: 72px;
+}
+.bottom_bar {
+  position: absolute;
+  top: 144px;
+}
+.left_upper_bar {
+  position: absolute;
+  top: 36px;
+  left: -36px;
+  transform: rotate(-90deg); -ms-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); -o-transform: rotate(-90deg);
+}
+.right_upper_bar {
+  position: absolute;
+  top: 36px;
+  right: -25px;
+  transform: rotate(-90deg); -ms-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); -o-transform: rotate(-90deg);  
+}
+.left_lower_bar {
+  position: absolute;
+  top: 108px;
+  left: -36px;
+  transform: rotate(-90deg); -ms-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); -o-transform: rotate(-90deg);  
+}
+.right_lower_bar {
+  position: absolute;
+  top: 108px;
+  right: -25px;
+  transform: rotate(-90deg); -ms-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); -o-transform: rotate(-90deg);  
+}
+
 
 /** have_the_time **/
 .clock {

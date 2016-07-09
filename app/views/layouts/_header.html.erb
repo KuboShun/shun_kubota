@@ -12,9 +12,9 @@
       </div>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="nav navbar-nav">
-          <li class="active"><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "About", static_pages_about_path %></li>
-          <li><a href="" id="sampleButton">Blog</a></li>
+          <li><%= link_to "Blog", posts_path %></li>
           <li><%= mail_to "shun.ku60ta@gmail.com", "Contact", :cc => "", :subject => "From 200 websites in 200 days" %></li>
           <li><%= link_to "Github", "https://github.com/KuboShun/shun_kubota" , target: "_blank" %></li>
         </ul>
@@ -41,3 +41,4 @@
     </div>
   </div>
 </div>
+
