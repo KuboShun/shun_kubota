@@ -9,6 +9,76 @@
   margin-top: 30px;
 }
 
+/** drag_graphic **/
+.block_area {
+  width: 140px;
+  min-width: 140px;
+  height: 400px;
+  background: #3C3B6E;
+  float: left;
+
+  .square {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    background: #ffffff;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    margin: 15px;
+    border-right:50px solid transparent;
+    border-left:50px solid transparent;
+    border-bottom:87px solid #ffffff;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    -webkit-border-radius: 100px;/* width,heightの半分 */
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background: #ffffff;
+  }
+
+  .active {
+    background: #FF0000;
+    background-color: #FF0000;
+  }
+  
+  .triangle.draggable,
+  .triangle.active {
+    border-right:50px solid transparent;
+    border-left:50px solid transparent;
+    border-bottom:87px solid #ff0000;
+    background: transparent;
+    background-color: transparent;
+  }
+
+  .draggable {
+    background: #ff00ff;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+  }
+}
+
+.drag_graphic_canvas {
+  width: 80%;
+  height: 400px;
+  background: #ffffff;
+  float: left;
+}
+
+  #square {
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+  }
+
+
 /** dragon radar **/
 .flag_base {
   width: 494px;
