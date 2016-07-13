@@ -44,16 +44,6 @@ function drawK() {
   ctx.fillRect(0, 0, 800, 400);
   ctx.globalCompositeOperation = "lighter";
 
-  //位置を更新
-  locX += speedX;
-  locY += speedY;
-  
-  if(locX < 0 || locX > 800){
-      speedX *= -1;
-  }
-  if(locY < 0 || locY > 400){
-      speedY *= -1;
-  }
   for (var i = 0; i < 70; i++) {
     r = Math.floor(Math.random() * 256);
     g = Math.floor(Math.random() * 256);
