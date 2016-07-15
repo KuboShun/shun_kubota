@@ -1,0 +1,28 @@
+<% provide(:title,"Party Organizer") %>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="description_message">
+        When is your birthday?
+      </div>
+      <div class="workspace">
+        <div class="birthday_input">
+          <input type="date" id="birthday">
+          <button type="submit" class="btn btn-primary judge_party">Party!!</button>
+        </div>
+        <div class="judgement">
+          <div class="judgement_area">
+            <h3>It's your <span id="days">???? days</span> anniversary!!!!</h3>
+            
+            <div class="aniversary_check">
+              <hr>
+              <input type="number" id="days_count" value="10000">
+              <button type="submit" class="btn btn-primary check_aniversary"> days after</button>
+              <h3>Your <span id="input_day"></span> days aniversary is <span id="output_date"></span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/party_organizer.js" type="text/javascript" charset="utf-8" async defer></script>
