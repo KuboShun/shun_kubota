@@ -7,17 +7,8 @@ var select_box = document.getElementsByClassName("select_box")[0]
 init()
 
 function init() {
-
-//  makeBackground();
-//  makeRect()
-//  makeCircle()
-//  makeDotGradation()
-//  makeTriangle()
-//  makeRadiation()
-//  makeRadiation2()
-//  makeSpiral()
-//  makeWave()
   makeSinWave()
+
   for (var i = 0; i < select_box.children.length; i++) {
     select_box.children[i].addEventListener("click", changeBackground)
   }
