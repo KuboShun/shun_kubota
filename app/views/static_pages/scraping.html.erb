@@ -1,0 +1,18 @@
+<% provide(:title,"Scraping") %>
+  <div class="container">
+    <!-- 見出し -->
+    <div class="jumbotron">
+      <h1>Welcome!</h1>
+      <h2 style="font-family:futura; font-weight:900">Scraping</h2>
+      <hr>
+        <p><strong>Naverまとめ トップ<%= @url_scrapings.length %></strong>
+          <ul>
+            <% @url_scrapings.each do |url_scraping| %>
+            <li><%= link_to url_scraping[0], url_scraping[1] %></li>
+            <% end %>        
+          </ul>
+        </p>
+      <hr>
+
+    </div><!-- 見出し終了 -->
+  </div>
