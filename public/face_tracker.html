@@ -1,0 +1,24 @@
+<% provide(:title,"Face Tracker") %>
+  <div class="container">
+    <!-- 見出し -->
+    <div class="jumbotron">
+      <div class="description_message">
+        Why dont't you tracking your face?
+      </div>
+      <div class="workspace">
+        <div class="videoWrapper">
+          <video id="inputVideo" width="400" height="300" autoplay loop></video>
+          <canvas id="drawCanvas" width="400" height="300"></canvas>
+        </div>
+        <div class="countMessage">
+          Your mouse count is <strong><span id="mouse_open_count">0</span></strong>.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- clmtrackr libraries -->
+<script src="/js/clmtrackr.js"></script>
+<script src="/js/model_pca_20_svm.js"></script>
+<script src="/js/face_tracker.js" type="text/javascript" async defer></script>
