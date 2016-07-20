@@ -8,7 +8,7 @@
         <p><strong>Naverまとめ トップ<%= @url_scrapings.length %></strong>
           <ul>
             <% @url_scrapings.each do |url_scraping| %>
-            <li><%= link_to url_scraping[0], url_scraping[1] %></li>
+              <li><%= link_to url_scraping[0], url_scraping[1] %></li>
             <% end %>        
           </ul>
         </p>
