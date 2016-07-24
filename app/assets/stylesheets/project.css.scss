@@ -9,6 +9,24 @@
   margin-top: 30px;
 }
 
+.balloon_space {
+  width: 100%;
+  height: 500px;
+}
+#balloon {
+  display: block;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+//  background: #0000ff;
+  background: radial-gradient(at 50% 30%, #5afc00, #1f8100);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  transform:rotateZ(45deg)
+}
+
+/** bounding_ball **/
 .bounding_ball_space {
   height: 500px;
 }
