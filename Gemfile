@@ -6,6 +6,12 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.1'
 gem 'bootstrap-sass'
 gem 'nokogiri'
+gem 'react-rails'
+
+gem 'google-api-client', '<0.9'
+# gem "rails"
+gem 'trollop', '~> 2.1'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap_form'

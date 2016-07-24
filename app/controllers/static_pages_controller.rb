@@ -13,6 +13,11 @@ class StaticPagesController < ApplicationController
     render file: "public/#{params[:file_id]}", layout: true, content_type: 'text/html'
   end
 
+  def node
+    logger.debug "出力したいデバッグ情報: " + params[:file_id]
+    render file: "public/node/#{params[:file_id]}", layout: true, content_type: 'text/html'
+  end
+
   include Scrape
   def scraping
     @url_scrapings = url_scraping

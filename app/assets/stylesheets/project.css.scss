@@ -9,10 +9,18 @@
   margin-top: 30px;
 }
 
-.fireworks_field {
-  background: #414141;
-  width: 100%;
-  height: 400px;
+.bounding_ball_space {
+  height: 500px;
+}
+
+#bounding_ball {
+  display: block;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  border: solid 8px #000;
+  border-radius: 50%;
+  background-color: #ffffff;  
 }
 
 /** audio_recorder **/
