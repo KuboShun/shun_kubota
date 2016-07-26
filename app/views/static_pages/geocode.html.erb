@@ -1,0 +1,21 @@
+<% provide(:title,"Geocode") %>
+  <div class="container">
+    <!-- 見出し -->
+    <div class="jumbotron">
+      <h1>Welcome!</h1>
+      <h2 style="font-family:futura; font-weight:900">Geocode</h2>
+      <hr>
+      hogehoge
+
+      <%= form_for(@location, url: nearby_locations_path, html: {method: "post"}) do |f| %>
+        <%= f.hidden_field :latitude %>
+        <%= f.hidden_field :longitude %>
+        .actions
+          <%= f.submit '現在地から近いレコードを検索' %>
+          <% end %>
+      <hr>
+
+    </div><!-- 見出し終了 -->
+  </div>
+
+  <script type="text/javascript" src="/javascripts/geocode.js"></script>

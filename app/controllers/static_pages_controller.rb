@@ -24,4 +24,5 @@ class StaticPagesController < ApplicationController
     logger.debug "出力したいデバッグ情報: " + @url_scrapings[0][0]
   end
 
+
 end

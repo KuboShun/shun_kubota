@@ -7,6 +7,7 @@ gem 'rails', '4.2.1'
 gem 'bootstrap-sass'
 gem 'nokogiri'
 gem 'react-rails'
+gem 'geocoder'
 
 gem 'google-api-client', '<0.9'
 # gem "rails"

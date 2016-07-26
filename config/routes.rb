@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get  'static_pages/contact'
   get  'static_pages/number'
   get  'static_pages/scraping'
+  get  'static_pages/geocode'
   resources :posts
 
 
