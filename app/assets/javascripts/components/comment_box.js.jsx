@@ -82,6 +82,7 @@ var CommentForm = React.createClass({
         <input type="text" placeholder="Your name" ref="author" />
         <input type="text" placeholder="Say something..." ref="text" />
         <input type="submit" value="Submit" />
+        <button type="submit">Submit</button>
       </form>
     );
   }
