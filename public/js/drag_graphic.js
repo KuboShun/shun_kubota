@@ -10,9 +10,6 @@ function init(){
   for (var i = 0; i < block.children.length; i++) {
     block.children[i].addEventListener("click", selectElement)
   }
-
-// $( "#draggable" ).draggable();
-
 }
 
 

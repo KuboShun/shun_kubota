@@ -41,8 +41,6 @@ function draw(e){
     oldY = y
 }
 
-
-
 // change the color
 var paint = "white"
 var red_range, green_range, blue_range, rgb_setting;
