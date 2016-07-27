@@ -8,6 +8,7 @@ function init(){
   var num1 = "";
   var num2 = "";
   var sign = "";
+  var sign_log = "";
 
   for (var i = 0; i <= number_button.length; i++) {
     if (number_button[i] != null) {
@@ -63,10 +64,26 @@ function init(){
             }
             calc_display.innerHTML = num1
             num2 = num1
-            num1 = ""
             sign = ""
             break;
           default:
+            switch(sign_log){
+              case "+":
+                num1 = +num2 + +num1
+                break
+              case "-":
+                num1 = +num2 - +num1
+                break
+              case "*":
+                num1 = +num2 * +num1
+                break
+              case "/":
+                num1 = +num2 / +num1
+                break
+              default:
+                break
+            }
+            calc_display.innerHTML = num1
             num2 = num1
             num1 = ""
             break;
