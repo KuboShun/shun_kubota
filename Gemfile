@@ -6,7 +6,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.1'
 gem 'bootstrap-sass'
 gem 'nokogiri'
-gem 'react-rails'
+gem 'react-rails', '~> 1.0'
+gem 'marked-rails'
+
 gem 'geocoder'
 
 gem 'google-api-client', '<0.9'

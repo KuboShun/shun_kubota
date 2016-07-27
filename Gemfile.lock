@@ -113,6 +113,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
+    marked-rails (0.3.2.0)
     memoist (0.14.0)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
@@ -223,11 +224,12 @@ DEPENDENCIES
   google-api-client (< 0.9)
   jbuilder (~> 2.0)
   jquery-rails
+  marked-rails
   nokogiri
   pg (= 0.17.1)
   rails (= 4.2.1)
   rails_12factor (= 0.0.2)
-  react-rails
+  react-rails (~> 1.0)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring

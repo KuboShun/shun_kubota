@@ -14,5 +14,9 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require turbolinks
+//= require react
+//= require components
+//= require react_ujs
 //= require_tree .
+//= require marked
 //= require_tree ../../../lib/assets/javascripts/.

@@ -5,9 +5,14 @@ Rails.application.routes.draw do
   get  'static_pages/contact'
   get  'static_pages/number'
   get  'static_pages/scraping'
-  get  'static_pages/geocode'
+  get  'comments/index'
   resources :posts
 
+  namespace :api, format: 'json' do
+    namespace :v1  do
+      resources :comments
+    end
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

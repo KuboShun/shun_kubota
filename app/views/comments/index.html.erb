@@ -1,0 +1,10 @@
+
+<% provide(:title, "React Tutorial") %>
+<div class="container">
+  <div class="jumbotron">
+    <div class="description_message"></div>
+    <div class="workspace">
+      <%= react_component('CommentBox', url: '/api/v1/comments.json', pollInterval: 2000) %>
+    </div>
+  </div>
+</div>
