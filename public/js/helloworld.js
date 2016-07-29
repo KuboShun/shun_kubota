@@ -5,14 +5,14 @@ var Hello = React.createClass({
     return React.DOM.div({className: 'hello'}, 'Hello ' + this.props.name);
   }
 })
-
+/*
 ReactDOM.render(
   React.createFactory(Hello)({name: 'React!!!!'}), document.getElementById("example")
 );
 ReactDOM.render(
   React.createFactory(Hello)({name: 'React!!!!'}), document.getElementById("example2")
 );
-
+*/
 for (var i = 0; i < react_sample.length; i++) {
   ReactDOM.render(
     React.createFactory(Hello)({name: 'React!!!!'}), react_sample[i]
@@ -27,11 +27,8 @@ var Evening = React.createClass({
     );
   }
 })
-
 ReactDOM.render(<Evening name="React" />, document.getElementById("app"));
-
 /** End : React component **/
-
 
 var Timer = React.createClass({
   getInitialState: function() {
@@ -83,3 +80,81 @@ var Timer = React.createClass({
 });
 
 ReactDOM.render(<Timer />, document.getElementById('timer'));
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+class Timer extends React.Component {
+
+  constructor() {
+    super();
+    this.tick = this.tick.bind(this);
+    this.state = {
+      secondsElapsed: 0,
+      isStart: false
+    };
+  }
+
+  tick() {
+    this.setState({
+      secondsElapsed: this.state.secondsElapsed + 1
+    });
+  }
+
+  start() {
+    if(!this.state.isStart) {
+      this.interval = setInterval(this.tick, 1000);
+      this.setState({
+        isStart: true
+      });
+    }
+  }
+
+  stop() {
+    if(this.state.isStart){
+      clearInterval(this.interval);
+      this.setState({
+        isStart: false
+      });
+    }
+  }
+
+  reset() {
+    clearInterval(this.interval);
+    this.setState({
+      secondsElapsed: 0,
+      isStart: false,
+    });
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  render() {
+    return (
+      <div>
+        Seconds Elapsed: {this.state.secondsElapsed}
+      <div>
+          <button onClick={this.start.bind(this)}>start</button>
+          <button onClick={this.stop.bind(this)}>stop</button>
+          <button onClick={this.reset.bind(this)}>reset</button>
+      </div>
+            </div>
+    );
+  }
+}
+
+React.render(<Timer />, document.getElementById('container'));
+
+*/
