@@ -1,10 +1,3 @@
-/*
-ReactDOM.render(
-  <h1>Hello, world!</h1>,
-  document.getElementById('example')
-);
-*/
-
 var react_sample = document.getElementsByClassName("example")
 
 var Hello = React.createClass({
@@ -26,24 +19,66 @@ for (var i = 0; i < react_sample.length; i++) {
   );
 }
 
+/** React component **/
+var Evening = React.createClass({
+  render: function() {
+    return (
+      <div className="sample">Evening {this.props.name}</div>
+    );
+  }
+})
+
+ReactDOM.render(<Evening name="React" />, document.getElementById("app"));
+
+/** End : React component **/
 
 
 var Timer = React.createClass({
   getInitialState: function() {
-    return {secondsElapsed: 0};
+    return {
+      secondsElapsed: 0,
+      isStart: false
+    };
   },
   tick: function() {
     this.setState({secondsElapsed: this.state.secondsElapsed + 1});
   },
-  componentDidMount: function() {
-    this.interval = setInterval(this.tick, 1000);
+
+  start: function() {
+    if(!this.state.isStart) {
+      this.interval = setInterval(this.tick, 1000)
+      this.setState({isStart: true})
+    }
   },
+  stop: function() {
+    if(this.state.isStart) {
+      console.log("hoge")
+      clearInterval(this.interval)
+      this.setState({isStart: false})
+    }
+  },
+  reset: function() {
+    clearInterval(this.interval)
+    this.setState({
+      secondsElapsed: 0,
+      isStart: false
+    })
+  },
+
   componentWillUnmount: function() {
     clearInterval(this.interval);
+    console.log("end")
   },
   render: function() {
     return (
-      <div>secondsElapsed: {this.state.secondsElapsed}</div>
+      <div>
+        secondsElapsed: {this.state.secondsElapsed}
+        <p>
+          <button onClick={this.start}>start</button>
+          <button onClick={this.stop}>stop</button>
+          <button onClick={this.reset}>reset</button>
+        </p>
+      </div>
     );  }
 });
 
