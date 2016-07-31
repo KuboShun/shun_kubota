@@ -20,7 +20,7 @@ class BMICulculator extends React.Component {
   calculate() {
     console.log("hoge")
     result = this.state.weight / (this.state.height*this.state.height) * 10000
-    this.setState({bmi: this.state.weight / (this.state.height*this.state.height) * 10000})
+    this.setState({bmi: result})
     this.bmijudge(result)
   }
 

@@ -1,3 +1,7 @@
+
+realtime_chat_io()
+
+function realtime_chat_io(){
 // 1.モジュールオブジェクトの初期化
 var fs = require("fs");
 var server = require("http").createServer(function(req, res) {
@@ -34,3 +38,7 @@ io.sockets.on("connection", function (socket) {
     }
   });
 });
+
+}
+
+exports.realtime_chat_io = realtime_chat_io
